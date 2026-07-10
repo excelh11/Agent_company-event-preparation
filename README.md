@@ -1,4 +1,4 @@
-# Company Event Prep Harness
+# AI Agent_Company Event Prep Harness
 
 **Language**: 한국어 | [English](README.en.md) | [中文](README.zh.md)
 
