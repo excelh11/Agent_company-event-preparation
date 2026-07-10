@@ -68,3 +68,7 @@ You don't need to know the skill name — a natural-language request automatical
 - The agent that produced the checklist/schedule never self-certifies safety (author and reviewer are separated).
 - Budget spending, external contracts, attendee personal data, and final safety sign-off are never marked complete without explicit human approval.
 - Rules that repeat across every event (`standing-rules.md`) are kept separate from this event's specific values (`00-event-params.md`), so standing rules carry over cleanly to the next event.
+
+## License
+
+[MIT License](LICENSE)
