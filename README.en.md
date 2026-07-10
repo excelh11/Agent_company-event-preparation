@@ -4,6 +4,17 @@
 
 A Claude Code harness that runs company/team event preparation as **checklist, role assignment, schedule, safety review, and post-event retrospective**. Designed with the harness-lab pattern (Agent + Skill + Orchestrator + artifacts).
 
+## Why it's split into 4 agents
+
+Instead of handing everything to one agent, the work is split into four because each role reads different inputs and applies different judgment.
+
+- **prep-coordinator** — deciding "what to prepare and who owns it" against a budget cap and headcount is its own area of judgment, so it's a separate role.
+- **scheduler** — turning a checklist into time allocation and deadline urgency requires different reasoning than building the checklist itself, so it's separate.
+- **safety-checker** — the most important separation. If the same agent that wrote the checklist/schedule also graded its own safety, it would be prone to self-assessment bias and likely to miss risks. So this role never authors anything — it only reviews. Author and reviewer are deliberately kept apart.
+- **retrospective-writer** — runs at a completely different point in time, after the event, on a different kind of input (real-world feedback, not planning documents), so it's kept separate from the planning-phase agents.
+
+Before adding any new agent, we check: are the inputs/outputs independent, does it need different expertise, is it a responsibility that gets reused across runs, and would quality or safety suffer if it were dropped. All four roles here passed that bar.
+
 ## What it does
 
 It mirrors the steps a human would actually take to prepare an event.
