@@ -2,7 +2,8 @@
 
 **Language**: 한국어 | [English](README.en.md) | [中文](README.zh.md)
 
-회사/팀 행사 준비를 **준비물, 역할 분담, 일정, 안전 점검, 행사 후 회고**로 나눠 진행하는 Claude Code 하네스입니다. [harness-lab](https://github.com/anthropics) 방식(Agent + Skill + Orchestrator + artifacts)으로 설계했습니다.
+회사/팀 행사 준비를 **준비물, 역할 분담, 일정, 안전 점검, 행사 후 회고**로 나눠 진행하는 Claude Code 하네스입니다.
+[harness-lab](https://github.com/anthropics) 방식(Agent + Skill + Orchestrator + artifacts)으로 설계했습니다.
 
 ## 무엇을 하는가
 
